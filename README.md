@@ -13,7 +13,7 @@ This repo contains an extract of the [MoMA Database](https://github.com/Museumof
 
 To get started:
 
-- Clone the repo
+- Clone the repo and ask for the JSON
 - `$ bundle install` and `$ yarn`
 - `$ rails db:create db:migrate db:seed` _Te seed process might take a while_
 - `$ rails s` and `$ webpack-dev-server`
