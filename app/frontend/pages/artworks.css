@@ -1,0 +1,15 @@
+.artworks-show {
+  .artwork {
+    display: flex;
+    align-items: flex-start;
+    > div:first-child {
+      height: 12rem;
+      width: 12rem;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      margin-right: 1rem;
+      background: white;
+    }
+  }
+}

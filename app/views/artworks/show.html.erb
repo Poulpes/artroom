@@ -1,0 +1,17 @@
+<h1><%= @artwork.title %></h1>
+<div class="artwork">
+  <div style="background-image: url(<%= @artwork.thumbnail_url %>)"></div>
+  <div class="artwork-details">
+    <p><%= @artwork.date %>, <%= @artwork.medium %></p>
+    <p><i><%= @artwork.credit_line %></i></p>
+    <p><strong><%= @artwork.artists.pluck(:display_name).join(', ') %></strong></p>
+    <% related_artworks = Artwork.joins(:artists).where("artists.id IN (?) AND artworks.id != ?", @artwork.artists.pluck(:id), @artwork.id) %>
+    <% unless related_artworks.blank? %>
+      <p>Other artworks:
+      </p>
+      <% related_artworks.each do |related_artwork| %>
+        <div><%= link_to related_artwork.title, artwork_path(related_artwork.id) %></div>
+      <% end %>
+    <% end %>
+  </div>
+</div>

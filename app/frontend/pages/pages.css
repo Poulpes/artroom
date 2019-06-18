@@ -1,0 +1,18 @@
+@import "../init";
+
+.pages-home {
+  h1 {
+    font-size: 9.6rem;
+    span {
+      color: var(--red);
+    }
+  }
+  .todo {
+    height: 8rem;
+    background: white;
+    padding: 1rem;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+  }
+}
