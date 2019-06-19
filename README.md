@@ -9,6 +9,8 @@ This repo contains an extract of the [MoMA Database](https://github.com/Museumof
 - instant results are displayed when the user type his query (autocomplete style)
 - the user should be able to search by artworks name or artist name
 
+![](https://media.giphy.com/media/f9vyip1Lybc1ynuhck/giphy.gif)
+
 ## Getting started
 
 To get started:
